@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { HashRouter, Routes, Route, Link } from 'react-router-dom'
 import './index.css'
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="app">
         {/* Background Glowing Orbs */}
         <div className="glow-orb glow-orb-1" style={{ transform: `translateY(${scrollY * 0.15}px)` }}></div>
@@ -60,7 +60,7 @@ function App() {
           <p>© {new Date().getFullYear()} Ahmed Ashraf. Crafted with React & vanilla CSS.</p>
         </footer>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
