@@ -47,7 +47,7 @@ function App() {
 
         <main>
           <Routes>
-            <Route path="/" element={<Home scrollY={scrollY} />} />
+            <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>

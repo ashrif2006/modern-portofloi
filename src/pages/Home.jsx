@@ -6,7 +6,7 @@ import Projects from '../components/Projects';
 const Home = ({ scrollY }) => {
   return (
     <>
-      <Hero scrollY={scrollY} />
+      <Hero />
       <Projects limit={3} title="Featured Projects" />
       
       <section style={{ padding: '80px 0', textAlign: 'center', animation: 'fadeIn 1s ease-out' }}>

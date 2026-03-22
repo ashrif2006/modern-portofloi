@@ -7,8 +7,6 @@ const Hero = ({ scrollY }) => {
     <section 
       className="hero-section"
       style={{
-        transform: `translateY(${scrollY * 0.2}px)`,
-        opacity: Math.max(1 - scrollY / 600, 0),
         animation: 'fadeIn 1s ease-out',
         flexWrap: 'wrap-reverse',
       }}
